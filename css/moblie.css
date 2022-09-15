@@ -198,3 +198,385 @@ footer .white_btn button {
     @media screen and (max-width:375px) {
 
 }
+
+/*데탑*/
+@media screen and (max-width:1440px) {
+  #home .main_vid video {
+    left: -13%;
+    height:100%;
+    width:auto;
+  }
+  .down_area button {
+    width: 30%;
+  }
+}
+
+
+
+/*노트북*/
+  @media screen and (max-width:1024px) {
+
+    nav.pc_wrap {
+      display: none;
+    }
+
+    .hd_all .menu-btn {
+      display: block;
+  }
+
+    #home .main_vid video {
+      left: -69%;
+  }
+
+    #home .main_area {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  footer .white_btn button {
+    width: 36%;
+}
+
+#intro1{
+  padding: 100px 0 80px;
+}
+
+.intro1_bg::after{
+  width: 80%;
+  height: 50%;
+}
+
+.intro1_circle::after{
+  height: 50%;
+}
+
+.intro1_txt{
+  width: 40%;
+}
+
+.intro1_img{
+  width: 55%;
+}
+
+.intro1_img img{
+  max-width: 100%;
+}
+
+
+/*intro2*/
+
+.intro2_bg::after{
+  background-size: contain;
+}
+
+.intro2_circle::after{
+  background-size: contain;
+  top: 25%;
+}
+
+
+/*intro3*/
+
+
+.intro3_bg::after{
+  width: 90%;
+}
+
+.int3_cont_up{
+  margin-bottom: 1%;
+}
+
+.int3_box{
+  width: 48%;
+  padding: 2% 1%;
+  font-size: 0.9em;
+}
+
+.int3_box2 .int3_box_icon, .int3_box4 .int3_box_icon{
+  margin-bottom: 8.5% !important;
+}
+
+
+}
+
+
+
+  /*아이패드 (768px)*/
+  @media screen and (max-width:991px) {
+
+    .down_area button {
+      width: 40%;
+  }
+
+  #home .main_area .main_txt b {
+    font-size: 2rem;
+  }
+
+  #intro1{
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  .intro1_bg::after{
+    height: 30%;
+  }
+  
+  .intro1_contents{
+    display: block;
+  }
+
+  .intro1_txt{
+    width: 100%;
+  }
+
+  .intro1_txt h3{
+    text-align: center;
+  }
+
+  .intro1_img{
+    width: 100%;
+    margin-top: 8%;
+  }
+
+
+  /*intro2*/
+
+  .intro2_circle::after{
+    top: 35%;
+  }
+
+
+  /*intro3*/
+
+
+  .int3_cont_up{
+    display: block;
+  }
+
+  .int3_cont_down{
+    display: block;
+  }
+
+  .int3_box{
+    width: 100%;
+    margin-bottom: 5%;
+    position: relative;
+  }
+
+  .intro3_bg{
+    z-index: 0;
+  }
+
+  .intro3_bg::after{
+    bottom: 0;
+    height: 28%;
+  }
+
+    #contact .contact_area .con_box .con_left b {
+      font-size: 4rem;
+      color: #fff;}
+
+}
+
+
+
+/*모바일*/
+
+@media screen and (max-width:767px) {
+
+  div.circle.expand {
+    top: -315px;
+    left: -263px;
+}
+
+  #home .main_area h2 {
+    font-size: 5rem;
+  }
+
+  #home .main_area .main_txt b br{
+    display: none;
+  }
+
+  #home .main_area .main_txt p br{
+    display: none;
+  }
+
+  .down_area button {
+    width: 47%;
+}
+
+.intro1_bg::after{
+  height: 38%;
+}
+
+
+/*intro2*/
+
+.intro2_circle::after{
+  top: 43%;
+}
+
+.int2_cont_txt br{
+  display: none;
+}
+
+.int2_img img{
+  max-width: 100%;
+}
+
+
+#contact .contact_area .con_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contact .contact_area {
+  height: 800px;
+}
+#contact .contact_area .con_box .con_left {
+  width: 90%;
+  align-items: center;
+}
+
+
+#contact .contact_area .con_box .con_right {
+  width: 90%;
+  margin-top: 30px;
+}
+
+footer .footer_area .footer_top {
+  flex-direction: column;
+}
+
+footer .footer_area .footer_top .con_info {
+  width: 100%;
+}
+
+footer .white_pp {
+  width: 100%;
+}
+
+
+footer .footer_area .footer_top div{
+  margin-bottom: 30px;
+}
+
+
+}
+
+/*모바일2*/
+
+
+@media screen and (max-width:576px) {
+  div.circle.expand {
+    width: 642px;
+    height: 100%;
+    top: -246px;
+    left: -210px;
+  }
+
+
+
+  #home .main_area h2 {
+    font-size: 3.2rem;
+}
+
+#home .main_area .main_txt b {
+  font-size: 1.3rem;
+}
+
+#home .main_area .main_txt p {
+  font-size: 1.1rem;
+}
+
+.down_area {
+  flex-direction: column;
+  align-items: center;
+}
+
+.down_area button {
+  width: 80%;
+}
+
+.down_area button:nth-child(2){
+  margin-top: 15px;
+}
+
+.down_area button a {
+  font-size: 1rem;
+}
+
+.intro1_bg::after{
+  height: 28%;
+}
+
+.intro1_circle{
+  display: none;
+}
+
+.intro1_circle_m{
+  display: block;
+}
+
+.intro1_txt p{
+  z-index: 2;
+  position: relative;
+  font-size: 0.8em;
+}
+
+
+
+/*intro2*/
+
+#intro2{
+  padding: 100px 0;
+}
+
+.intro2_circle{
+  display: none;
+}
+
+.intro2_circle_m{
+  display: block;
+}
+
+.int2_cont_txt p, .int2_cont_txt h4{
+  font-size: 0.8em;
+}
+
+
+/*intro3*/
+
+
+.int3_box p{
+  font-size: 0.9em;
+}
+
+footer {
+  padding: 15% 0;
+}
+
+footer .white_btn button {
+  width: 48%;
+}
+
+}
+
+
+
+/*모바일3 갤럭시*/
+
+  @media screen and (max-width:425px) {
+    div.circle.expand {
+      top: -113px;
+  }
+
+}
+
+
+
+/*모바일4 아이폰*/
+    @media screen and (max-width:375px) {
+
+}
