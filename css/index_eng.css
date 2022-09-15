@@ -1,5 +1,43 @@
-*{margin:0; padding:0; box-sizing:border-box;}
-    a{text-decoration : none;}
-    address{font-style:normal;}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+address {
+    font-style: normal;
+}
 
 
+.aos-animate {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width:991px) {
+    #home .main_area h2 {
+        font-size: 6rem;
+    }
+
+
+
+    @media screen and (max-width:768px) {
+        .aos-animate {
+            width: 100%;
+        }
+    }
+
+    #home .main_area h2 {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 576px){
+#home .main_area h2 {
+    font-size: 3.2rem;
+}}
