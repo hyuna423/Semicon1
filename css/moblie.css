@@ -553,6 +553,11 @@ footer .footer_area .footer_top div{
   font-size: 0.9em;
 }
 
+#contact .contact_area {
+  width: 90%;
+}
+
+
 footer {
   padding: 15% 0;
 }
