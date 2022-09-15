@@ -70,93 +70,26 @@
 
       </nav>
 
-      <div class="m_nav_bar">
-        <div class="navbar"></div>
 
-        <h1><a href=""><img src="img/Semicon1_Logo_H 1.png" alt="logo"></a></h1>
-        <div class="circle"></div>
-        <div class="menu">
-          <ul>
-            <li><a href="#home" class="scroll">Home</a></li>
-            <li><a href="#about" class="scroll">About</a></li>
-            <li><a href="#coin" class="scroll">Semicon1 Coin
+      <input type="checkbox" id="active">
+      <label for="active" class="menu-btn"><span></span></label>
+      <label for="active" class="close"></label>
 
-              </a></li>
-            <li><a href="#roadmap" class="scroll">Roadmap</a></li>
-            <li><a href="#contact" class="scroll">Contact</a></li>
-            <li class="lan"><a href="index_eng.html" >
-              Eng
-              <img src="img/wep_eng.png" alt="eng_icon"></a></li>
-          </ul>
-        </div>
-        <div class="burger">
-          <div class="x"></div>
-          <div class="y"></div>
-          <div class="z"></div>
-        </div>
+      <nav class="wrapper">
 
-      </div>
+        <ul>
+          <li><a href="#home" class="scroll">Home</a></li>
+          <li><a href="#about" class="scroll">About</a></li>
+          <li><a href="#coin" class="scroll">SatelStar Coin
 
-      <script>
-        if ('ontouchstart' in window) { var click = 'touchstart'; }
-        else { var click = 'click'; }
+            </a></li>
+          <li><a href="#roadmap" class="scroll">Roadmap</a></li>
+          <li><a href="#contact" class="scroll">Contact</a></li>
+          <li><a href="index_eng.html" class="lan">Eng <img src="img/wep_eng.png" alt="eng_icon"></a></li>
 
+        </ul>
 
-        $('div.burger').on(click, function () {
-
-          if (!$(this).hasClass('open')) { openMenu(); }
-          else { closeMenu(); }
-
-        });
-
-
-        $('div.menu ul li a').on(click, function (e) {
-          if (event.cancelable) event.preventDefault();
-          closeMenu();
-        });
-
-
-        function openMenu() {
-
-          $('div.circle').addClass('expand');
-
-          $('div.burger').addClass('open');
-          $('div.x, div.y, div.z').addClass('collapse');
-          $('.menu li').addClass('animate');
-
-          setTimeout(function () {
-            $('div.y').hide();
-            $('div.x').addClass('rotate30');
-            $('div.z').addClass('rotate150');
-          }, 70);
-          setTimeout(function () {
-            $('div.x').addClass('rotate45');
-            $('div.z').addClass('rotate135');
-          }, 120);
-
-
-
-        }
-
-        function closeMenu() {
-
-          $('div.burger').removeClass('open');
-          $('div.x').removeClass('rotate45').addClass('rotate30');
-          $('div.z').removeClass('rotate135').addClass('rotate150');
-          $('div.circle').removeClass('expand');
-          $('.menu li').removeClass('animate');
-
-          setTimeout(function () {
-            $('div.x').removeClass('rotate30');
-            $('div.z').removeClass('rotate150');
-          }, 50);
-          setTimeout(function () {
-            $('div.y').show();
-            $('div.x, div.y, div.z').removeClass('collapse');
-          }, 70);
-
-        }
-      </script>
+      </nav>
 
     </div>
 
@@ -228,17 +161,17 @@
           <h4>Contact Infomation </h4>
           <dl>
             <dt>CEO</dt>
-            <dd></dd>
+            <dd>배혜진</dd>
             <dt>ADDRESS</dt>
-            <dd></dd>
+            <dd>춘천시 충혼길 52번길 10</dd>
             <dt>TEL</dt>
-            <dd></dd>
+            <dd>07080182153</dd>
           </dl>
         </div>
         <div class="white_pp">
           <h4>Whitepaper</h4>
           <div class="white_btn">
-            <button><a href="Semicon1 white paper Ver.01- ko.pdf">Ko.ver <img src="img/wep_ko.png" alt=""></a></button>
+            <button><a href="Semicon1 white paper Ver.01- Kor.pdf">Ko.ver <img src="img/wep_ko.png" alt=""></a></button>
             <button><a href="Semicon1 white paper Ver.01- Eng.pdf">Eng.ver <img src="img/wep_eng.png" alt=""></a></button>
         
           </div>
@@ -246,8 +179,8 @@
         <div class="">
           <h4>Follow Us</h4>
           <div class="sns_btn">
-            <button><a href=""><i class="xi-telegram"></i></a></button>
-            <button><a href=""><i class="xi-kakaotalk"></i></a></button>
+            <button><a href="https://t.me/semicon1_official"><i class="xi-telegram"></i></a></button>
+            <button><a href="https://open.kakao.com/o/sxU2KkBe"><i class="xi-kakaotalk"></i></a></button>
         
           </div>
         

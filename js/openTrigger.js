@@ -3,28 +3,22 @@ var openTrigger = $(".menu-trigger");
 var openTriggerTop = openTrigger.find(".menu-trigger-bar.top");
 var openTriggerMiddle = openTrigger.find(".menu-trigger-bar.middle");
 var openTriggerBottom = openTrigger.find(".menu-trigger-bar.bottom");
-
 //CLOSE TRIGGER
 var closeTrigger = $(".close-trigger");
 var closeTriggerLeft = closeTrigger.find(".close-trigger-bar.left");
 var closeTriggerRight = closeTrigger.find(".close-trigger-bar.right");
-
 //LOGO
 var logo = $(".logo");
-
 //MENU
 var menuContainer = $(".menu-container");
 var menu = $(".menu");
 var menuTop = $(".menu-bg.top");
 var menuMiddle = $(".menu-bg.middle");
 var menuBottom = $(".menu-bg.bottom");
-
 //TL
 var tlOpen = new TimelineMax({ paused: true });
 var tlClose = new TimelineMax({ paused: true });
-
 //OPEN TIMELINE
-jQuery(document).ready(function($) {
 tlOpen
   .add("preOpen")
   .to(
@@ -141,7 +135,6 @@ tlOpen
     },
     "preClose"
   );
-
 //CLOSE TIMELINE
 tlClose
   .add("close")
@@ -289,7 +282,6 @@ tlClose
     },
     "close"
   );
-
 //EVENTS
 openTrigger.on("click", function () {
   if (tlOpen.progress() < 1) {
@@ -298,7 +290,6 @@ openTrigger.on("click", function () {
     tlOpen.restart();
   }
 });
-
 closeTrigger.on("click", function () {
   if (tlClose.progress() < 1) {
     tlClose.play();

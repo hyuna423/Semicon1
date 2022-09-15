@@ -15,21 +15,14 @@
 
 /*노트북*/
   @media screen and (max-width:1024px) {
-    .hd_all hgroup {
-      display:none;
-  }
 
     nav.pc_wrap {
       display: none;
     }
 
-    header .hd_all .m_nav_bar h1{
-      display:block;
-    }
-
-    div.m_nav_bar{
+    .hd_all .menu-btn {
       display: block;
-    }
+  }
 
     #home .main_vid video {
       left: -69%;

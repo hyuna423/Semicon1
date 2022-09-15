@@ -71,95 +71,200 @@
 
       </nav>
 
-      <div class="m_nav_bar">
-        <div class="navbar"></div>
-
-        <h1><a href=""><img src="img/Semicon1_Logo_H 1.png" alt="logo"></a></h1>
-        <div class="circle"></div>
-        <div class="menu">
-          <ul>
-            <li><a href="#home" class="scroll">Home</a></li>
-            <li><a href="#about" class="scroll">About</a></li>
-            <li><a href="#coin" class="scroll">Semicon1 Coin
-
-              </a></li>
-            <li><a href="#roadmap" class="scroll">Roadmap</a></li>
-            <li><a href="#contact" class="scroll">Contact</a></li>
-            <li class="lan"><a href="index.html" >
-              Ko
-              <img src="img/wep_Ko.png" alt="ko_icon"></a></li>
-          </ul>
+      <div class="m_wrap">
+        <span class="menu-trigger">
+          <i class="menu-trigger-bar top"></i>
+          <i class="menu-trigger-bar middle"></i>
+          <i class="menu-trigger-bar bottom"></i>
+        </span>
+        <span class="close-trigger">
+          <i class="close-trigger-bar left"></i>
+          <i class="close-trigger-bar right"></i>
+        </span>
+        <span class="logo">
+          <span>
+            ⬢
+            <i class="logo-title">UI</i>
+            <i class="logo-badge">6</i>
+          </span>
+        </span>
+        <div class="inner-container">
+          <i class="menu-bg top"></i>
+          <i class="menu-bg middle"></i>
+          <i class="menu-bg bottom"></i>
+          <div class="menu-container">
+            <ul class="menu">
+              <li>
+                <a href="#">Login</a>
+              </li>
+              <li>
+                <a href="#">Create account</a>
+              </li>
+              <li>
+                <a href="#">Support</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="burger">
-          <div class="x"></div>
-          <div class="y"></div>
-          <div class="z"></div>
-        </div>
-
-      </div>
 
       <script>
-        if ('ontouchstart' in window) { var click = 'touchstart'; }
-        else { var click = 'click'; }
+        //OPEN TRIGGER
+        var openTrigger = $('.menu-trigger');
+        var openTriggerTop = openTrigger.find('.menu-trigger-bar.top');
+        var openTriggerMiddle = openTrigger.find('.menu-trigger-bar.middle');
+        var openTriggerBottom = openTrigger.find('.menu-trigger-bar.bottom');
 
+        //CLOSE TRIGGER
+        var closeTrigger = $('.close-trigger');
+        var closeTriggerLeft = closeTrigger.find('.close-trigger-bar.left');
+        var closeTriggerRight = closeTrigger.find('.close-trigger-bar.right');
 
-        $('div.burger').on(click, function () {
+        //LOGO
+        var logo = $('.logo');
 
-          if (!$(this).hasClass('open')) { openMenu(); }
-          else { closeMenu(); }
+        //MENU
+        var menuContainer = $('.menu-container');
+        var menu = $('.menu');
+        var menuTop = $('.menu-bg.top');
+        var menuMiddle = $('.menu-bg.middle');
+        var menuBottom = $('.menu-bg.bottom');
 
+        //TL
+        var tlOpen = new TimeLineMax({ paused: true });
+        var tlClose = new TimeLineMax({ paused: true });
+
+        //OPEN TIMELINE
+        tlOpen.add("preOpen")
+          .to(logo, 0.4, {
+            scale: 0.8,
+            opacity: 0,
+            ease: Power2.easeOut
+          }, "preOpen")
+          .to(openTriggerTop, 0.4, {
+            x: "+80px", y: "-80px", delay: 0.1, ease: Power4.easeIn, onComplete: function () {
+              closeTrigger.css('z-index', '25');
+            }
+          }, "preOpen")
+          .to(openTriggerMiddle, 0.4, {
+            x: "+=80px", y: "-=80px", ease: Power4.easeIn,
+            onComplete: function () {
+              openTrigger.css('visibility', 'hidden');
+            }
+          }, "preOpen")
+          .to(openTriggerBottom, 0.4, {
+            x: "+=80px", y: "-=80px", delay: 0.2, ease: Power4.easeIn
+          }, "preOpen")
+          .add("open", "-=0.4")
+          .to(menuTop, 0.8, {
+            y: "13%",
+            ease: Power4.easeInOut
+          }, "open")
+          .to(menuMiddle, 0.8, {
+            scaleY: 1,
+            ease: Power4.easeInOut
+          }, "open")
+          .to(menuBottom, 0.8, {
+            y: "-114%",
+            ease: Power4.easeInOut
+          }, "open")
+          .fromTo(menu, 0.6, {
+            y: 30, opacity: 0, visibility: 'hidden'
+          }, {
+            y: 0, opacity: 1, visibility: 'visible', ease: Power4.easeOut
+          }, "-=0.2")
+          .add("preClose", "-=0.8")
+          .to(closeTriggerLeft, 0.8, {
+            x: "-=100px", y: "+=100px", ease: Power4.easeOut
+          }, "preClose")
+          .to(closeTriggerRight, 0.8, {
+            x: "+=100px", y: "+=100px", delay: 0.2, ease: Power4.easeOut
+          }, "preClose");
+
+        //CLOSE TIMELINE
+        tlClose.add("close")
+          .to(menuTop, 0.2, {
+            backgroundColor: "#6295ca", ease: Power4.easeInOut, onComplete: function () {
+              logo.css('z-index', '26');
+              closeTrigger.css('z-index', '5');
+              openTrigger.css('visibility', 'visible');
+            }
+          }, "close")
+          .to(menuMiddle, 0.2, {
+            backgroundColor: "#6295ca", ease: Power4.easeInOut
+          }, "close")
+          .to(menuBottom, 0.2, {
+            backgroundColor: "#6295ca", ease: Power4.easeInOut
+          }, "close")
+          .to(menu, 0.6, {
+            y: 20, opacity: 0, ease: Power4.easeOut, onComplete: function () {
+              menu.css('visibility', 'hidden');
+            }
+          }, "close")
+          .to(logo, 0.8, {
+            scale: 1, opacity: 1, ease: Power4.easeInOut
+          }, "close", "+=0.2")
+          .to(menuTop, 0.8, {
+            y: "-113%",
+            ease: Power4.easeInOut
+          }, "close", "+=0.2")
+          .to(menuMiddle, 0.8, {
+            scaleY: 0,
+            ease: Power4.easeInOut
+          }, "close", "+=0.2")
+          .to(menuBottom, 0.8, {
+            y: "23%",
+            ease: Power4.easeInOut,
+            onComplete: function () {
+              menuTop.css('background-color', '#ffffff');
+              menuMiddle.css('background-color', '#ffffff');
+              menuBottom.css('background-color', '#ffffff');
+            }
+          }, "close", "+=0.2")
+          .to(closeTriggerLeft, 0.2, {
+            x: "+=100px", y: "-=100px", ease: Power4.easeIn
+          }, "close")
+          .to(closeTriggerRight, 0.2, {
+            x: "-=100px", y: "-=100px", delay: 0.1, ease: Power4.easeIn
+          }, "close")
+          .to(openTriggerTop, 1, {
+            x: "-=80px", y: "+=80px", delay: 0.2, ease: Power4.easeOut
+          }, "close")
+          .to(openTriggerMiddle, 1, {
+            x: "-=80px", y: "+=80px", ease: Power4.easeOut
+          }, "close")
+          .to(openTriggerBottom, 1, {
+            x: "-=80px", y: "+=80px", delay: 0.1, ease: Power4.easeOut
+          }, "close");
+
+        //EVENTS
+        openTrigger.on('click', function () {
+          if (tlOpen.progress() < 1) {
+            tlOpen.play();
+          } else {
+            tlOpen.restart();
+          }
         });
 
-
-        $('div.menu ul li a').on(click, function (e) {
-          if (event.cancelable) event.preventDefault();
-          closeMenu();
+        closeTrigger.on('click', function () {
+          if (tlClose.progress() < 1) {
+            tlClose.play();
+          } else {
+            tlClose.restart();
+          }
         });
-
-
-        function openMenu() {
-
-          $('div.circle').addClass('expand');
-
-          $('div.burger').addClass('open');
-          $('div.x, div.y, div.z').addClass('collapse');
-          $('.menu li').addClass('animate');
-
-          setTimeout(function () {
-            $('div.y').hide();
-            $('div.x').addClass('rotate30');
-            $('div.z').addClass('rotate150');
-          }, 70);
-          setTimeout(function () {
-            $('div.x').addClass('rotate45');
-            $('div.z').addClass('rotate135');
-          }, 120);
-
-
-
-        }
-
-        function closeMenu() {
-
-          $('div.burger').removeClass('open');
-          $('div.x').removeClass('rotate45').addClass('rotate30');
-          $('div.z').removeClass('rotate135').addClass('rotate150');
-          $('div.circle').removeClass('expand');
-          $('.menu li').removeClass('animate');
-
-          setTimeout(function () {
-            $('div.x').removeClass('rotate30');
-            $('div.z').removeClass('rotate150');
-          }, 50);
-          setTimeout(function () {
-            $('div.y').show();
-            $('div.x, div.y, div.z').removeClass('collapse');
-          }, 70);
-
-        }
       </script>
 
-    </div>
+      </div>
+      <!-- -->
+      <div id='links'>
+        <a id='twitter' href="https://twitter.com/karlovidek" target="_blank"><span class='fa fa-twitter'></span></a>
+        <div id='pens'><a href="https://codepen.io/karlovidek/" target="_blank"><span class='fa fa-codepen'></span></a>
+          my other Pens</div>
+      </div>
+
 
   </header>
 
@@ -171,28 +276,28 @@
         </video>
       </div>
       <div class="main_area container">
-        <div class="main_txt" data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom">
+        <div class="main_txt" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
           <b>Cost-effectiveness, transparency, and security secured through blockchain
             It enables large-scale expansion of semiconductor lines quickly and at low cost.
-            
-            
-            
+
+
+
           </b>
           <h2 class="tracking-in-contract">Semicon1
           </h2>
-          <p>The core competitiveness of the semiconductor market in the 21st century is how cost-effectiveness, advancement and speed of semiconductor production in a short period of time.
-            
-            
+          <p>The core competitiveness of the semiconductor market in the 21st century is how cost-effectiveness,
+            advancement and speed of semiconductor production in a short period of time.
+
+
           </p>
         </div>
 
         <div class="down_area">
           <button>
-              <a href="Semicon1 white paper Ver.01- Kor.pdf"><i class="xi-paper"></i> WhitePaper</a>
+            <a href="Semicon1 white paper Ver.01- Kor.pdf"><i class="xi-paper"></i> WhitePaper</a>
           </button>
           <button class="btn_wallet"><a href=""><i class="xi-wallet"></i> Wallet</a></button>
-      </div>
+        </div>
       </div>
     </section>
 
@@ -205,7 +310,7 @@
             </h2>
             <b>Welcome!</b>
           </div>
-          
+
           <div class="con_right">
             <h4>Contact us</h4>
             <p>Ask for a quotation from us !</p>
@@ -218,9 +323,9 @@
         </div>
       </div>
     </section>
-  
+
   </main>
-  
+
 
   <footer>
     <div class="footer_area container">
@@ -229,29 +334,30 @@
           <h4>Contact Infomation </h4>
           <dl>
             <dt>CEO</dt>
-            <dd></dd>
+            <dd>Bae hye jin</dd>
             <dt>ADDRESS</dt>
-            <dd></dd>
+            <dd>10, Chunghon-gil 52beon-gil, Chuncheon-si, Gangwon-do, Republic of Korea</dd>
             <dt>TEL</dt>
-            <dd></dd>
+            <dd>07080182153</dd>
           </dl>
         </div>
         <div class="white_pp">
           <h4>Whitepaper</h4>
           <div class="white_btn">
-            <button><a href="Semicon1 white paper Ver.01- ko.pdf">Ko.ver <img src="img/wep_ko.png" alt=""></a></button>
-            <button><a href="Semicon1 white paper Ver.01- Eng.pdf">Eng.ver <img src="img/wep_eng.png" alt=""></a></button>
-        
+            <button><a href="Semicon1 white paper Ver.01- Kor.pdf">Ko.ver <img src="img/wep_ko.png" alt=""></a></button>
+            <button><a href="Semicon1 white paper Ver.01- Eng.pdf">Eng.ver <img src="img/wep_eng.png"
+                  alt=""></a></button>
+
           </div>
         </div>
         <div class="">
           <h4>Follow Us</h4>
           <div class="sns_btn">
-            <button><a href=""><i class="xi-telegram"></i></a></button>
-            <button><a href=""><i class="xi-kakaotalk"></i></a></button>
-        
+            <button><a href="https://t.me/semicon1_official"><i class="xi-telegram"></i></a></button>
+            <button><a href="https://open.kakao.com/o/sxU2KkBe"><i class="xi-kakaotalk"></i></a></button>
+
           </div>
-        
+
         </div>
       </div>
       <div class="footer_bottom">
