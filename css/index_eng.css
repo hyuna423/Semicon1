@@ -2,4 +2,40 @@
     a{text-decoration : none;}
     address{font-style:normal;}
 
+@media screen and (max-width:1024px) {
+    .intro1_txt br{
+        display: none;
+    }
+
+    .int2_cont_txt{
+        text-align: center;
+    }
+
+    .int2_cont_txt br{
+        display: none;
+    }
+
+    .int3_box p br{
+        display: none;
+    }
+
+
+}
+
+
+@media screen and (max-width:767px){
+    .int2_cont_txt h4 br.need{
+        display: block;
+    } 
+
+    .intro2_circle::after{
+        top: 45%;
+      }
+}
+
+@media screen and (max-width:425px) {
+    .int3_box h5{
+        font-size: 0.9em;
+      }
+}
 

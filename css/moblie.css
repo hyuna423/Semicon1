@@ -7,12 +7,132 @@
 
 /*노트북*/
   @media screen and (max-width:1024px) {
+
+    #intro1{
+      padding: 100px 0 80px;
+    }
+
+    .intro1_bg::after{
+      width: 80%;
+      height: 50%;
+    }
+
+    .intro1_circle::after{
+      height: 50%;
+    }
+
+    .intro1_txt{
+      width: 40%;
+    }
+
+    .intro1_img{
+      width: 55%;
+    }
+
+    .intro1_img img{
+      max-width: 100%;
+    }
+
+
+    /*intro2*/
+
+    .intro2_bg::after{
+      background-size: contain;
+    }
+
+    .intro2_circle::after{
+      background-size: contain;
+      top: 25%;
+    }
+
+
+    /*intro3*/
+
+
+    .intro3_bg::after{
+      width: 90%;
+    }
+
+    .int3_cont_up{
+      margin-bottom: 1%;
+    }
+
+    .int3_box{
+      width: 48%;
+      padding: 2% 1%;
+      font-size: 0.9em;
+    }
+
+    .int3_box2 .int3_box_icon, .int3_box4 .int3_box_icon{
+      margin-bottom: 8.5% !important;
+    }
 }
 
 
 
   /*아이패드 (768px)*/
   @media screen and (max-width:991px) {
+
+    #intro1{
+      padding: 30px 0;
+      text-align: center;
+    }
+    
+    .intro1_bg::after{
+      height: 30%;
+    }
+    
+    .intro1_contents{
+      display: block;
+    }
+
+    .intro1_txt{
+      width: 100%;
+    }
+
+    .intro1_txt h3{
+      text-align: center;
+    }
+
+    .intro1_img{
+      width: 100%;
+      margin-top: 8%;
+    }
+
+
+    /*intro2*/
+
+    .intro2_circle::after{
+      top: 35%;
+    }
+
+
+    /*intro3*/
+
+
+    .int3_cont_up{
+      display: block;
+    }
+
+    .int3_cont_down{
+      display: block;
+    }
+
+    .int3_box{
+      width: 100%;
+      margin-bottom: 5%;
+      position: relative;
+    }
+
+    .intro3_bg{
+      z-index: 0;
+    }
+
+    .intro3_bg::after{
+      bottom: 0;
+      height: 28%;
+    }
+
 }
 
 
@@ -20,6 +140,24 @@
 /*모바일*/
 
 @media screen and (max-width:767px) {
+  .intro1_bg::after{
+    height: 38%;
+  }
+
+
+  /*intro2*/
+
+  .intro2_circle::after{
+    top: 43%;
+  }
+
+  .int2_cont_txt br{
+    display: none;
+  }
+
+  .int2_img img{
+    max-width: 100%;
+  }
 
 }
 
@@ -29,6 +167,51 @@
 
 @media screen and (max-width:576px) {
 
+  .intro1_bg::after{
+    height: 28%;
+  }
+
+  .intro1_circle{
+    display: none;
+  }
+
+  .intro1_circle_m{
+    display: block;
+  }
+
+  .intro1_txt p{
+    z-index: 2;
+    position: relative;
+    font-size: 0.8em;
+  }
+
+
+
+  /*intro2*/
+  
+  #intro2{
+    padding: 100px 0;
+  }
+
+  .intro2_circle{
+    display: none;
+  }
+
+  .intro2_circle_m{
+    display: block;
+  }
+
+  .int2_cont_txt p, .int2_cont_txt h4{
+    font-size: 0.8em;
+  }
+
+
+  /*intro3*/
+
+
+  .int3_box p{
+    font-size: 0.9em;
+  }
 }
 
 
