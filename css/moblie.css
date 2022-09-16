@@ -203,6 +203,9 @@ footer .footer_area .footer_top div{
 .down_area button a {
   font-size: 1rem;
 }
+#coin .coin_area .chart_area {
+  width: 90%;
+}
 
 #roadmap .roadmap_wrap .roadmap_right .rdm_box {
   width: 90%;

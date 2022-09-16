@@ -311,7 +311,7 @@ nav.pc_wrap ul li.lan a:hover:before {
 /*반응형*/
 .hd_all .menu-btn {
   line-height: 100px;
-  display:none;
+  display: none;
 }
 
 .wrapper {
@@ -451,7 +451,8 @@ nav.pc_wrap ul li.lan a:hover:before {
 }
 
 .wrapper ul li a:hover {
-  color: #03e9f4;;
+  color: #03e9f4;
+  ;
 }
 
 input[type="checkbox"] {
@@ -518,7 +519,7 @@ input[type="checkbox"] {
   transform: translateX(-100px);
 }
 
-.hd_all .wrapper ul li a.lan img{
+.hd_all .wrapper ul li a.lan img {
   max-width: 30px;
 }
 
@@ -539,7 +540,7 @@ input[type="checkbox"] {
 
 #home .main_vid {
   height: 100%;
-  width:100%;
+  width: 100%;
 }
 
 #home .main_vid video {
@@ -675,7 +676,7 @@ input[type="checkbox"] {
 
 
 
-#intro1{
+#intro1 {
   width: 100%;
   background: #1D007F;
   background: -webkit-linear-gradient(left bottom, #1D007F 5%, #170034 95%);
@@ -685,14 +686,14 @@ input[type="checkbox"] {
   padding: 200px 0;
   position: relative;
 
-  overflow:hidden;
+  overflow: hidden;
 }
 
-.intro1_wrap{
+.intro1_wrap {
   width: 100%;
 }
 
-.intro1_bg{
+.intro1_bg {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -700,7 +701,7 @@ input[type="checkbox"] {
   top: 0;
 }
 
-.intro1_bg::after{
+.intro1_bg::after {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -711,7 +712,7 @@ input[type="checkbox"] {
   background-size: contain;
 }
 
-.intro1_circle{
+.intro1_circle {
   position: absolute;
   right: 0;
   top: 0;
@@ -719,7 +720,7 @@ input[type="checkbox"] {
   height: 100%;
 }
 
-.intro1_circle::after{
+.intro1_circle::after {
   position: absolute;
   right: 0;
   top: 0;
@@ -730,7 +731,7 @@ input[type="checkbox"] {
   background-size: cover;
 }
 
-.intro1_circle_m{
+.intro1_circle_m {
   position: absolute;
   right: 0;
   top: 0;
@@ -742,7 +743,7 @@ input[type="checkbox"] {
   display: none;
 }
 
-.intro1_circle_m::after{
+.intro1_circle_m::after {
   position: absolute;
   right: 0;
   top: 0;
@@ -751,32 +752,32 @@ input[type="checkbox"] {
 }
 
 
-.intro1_contents{
+.intro1_contents {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.intro1_txt{
+.intro1_txt {
   width: 30%;
   margin-top: 10%;
 }
 
-.intro1_txt h3{
+.intro1_txt h3 {
   text-align: left;
 }
 
-.intro1_txt p{
+.intro1_txt p {
   color: #fff;
 }
 
-.intro1_img{
+.intro1_img {
   width: 60%;
   z-index: 5;
 }
 
-.intro1_img img{
+.intro1_img img {
   max-width: 90%;
 }
 
@@ -784,21 +785,21 @@ input[type="checkbox"] {
 
 /*intro2*/
 
-#intro2{
+#intro2 {
   width: 100%;
   position: relative;
   background-color: #211527;
   text-align-last: center;
   padding: 150px 0 100px;
-  
-  overflow:hidden;
+
+  overflow: hidden;
 }
 
-.intro2_wrap{
+.intro2_wrap {
   width: 100%;
 }
 
-.intro2_bg{
+.intro2_bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -806,7 +807,7 @@ input[type="checkbox"] {
   height: 100%;
 }
 
-.intro2_bg::after{
+.intro2_bg::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -816,7 +817,7 @@ input[type="checkbox"] {
   background: url(../img/intro2_bg.png) no-repeat;
 }
 
-.intro2_circle{
+.intro2_circle {
   position: absolute;
   top: 0;
   left: 0;
@@ -825,7 +826,7 @@ input[type="checkbox"] {
 }
 
 
-.intro2_circle::after{
+.intro2_circle::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -835,7 +836,7 @@ input[type="checkbox"] {
   background: url(../img/intro2_circle_w.png) no-repeat;
 }
 
-.intro2_circle_m{
+.intro2_circle_m {
   position: absolute;
   top: 0;
   left: 0;
@@ -844,7 +845,7 @@ input[type="checkbox"] {
   display: none;
 }
 
-.intro2_circle_m::after{
+.intro2_circle_m::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -854,34 +855,35 @@ input[type="checkbox"] {
   background: url(../img/intro2_circle_m.png) no-repeat;
 }
 
-.intro2_contents{
+.intro2_contents {
   width: 100%;
 }
 
-.int2_cont_txt{
+.int2_cont_txt {
   width: 100%;
   margin-bottom: 5%;
 }
 
-.int2_cont_txt p, .int2_cont_txt h4{
+.int2_cont_txt p,
+.int2_cont_txt h4 {
   color: #fff;
 }
 
-.int2_cont_txt h4{
+.int2_cont_txt h4 {
   margin-bottom: 3%;
   font-weight: bold;
 }
 
-.int2_cont_txt br.need{
+.int2_cont_txt br.need {
   display: none;
 }
 
-.int2_img{
+.int2_img {
   width: 100%;
 }
 
-.int2_img img{
-    max-width: 70%;
+.int2_img img {
+  max-width: 70%;
 }
 
 
@@ -889,22 +891,22 @@ input[type="checkbox"] {
 /*intro3*/
 
 
-#intro3{
+#intro3 {
   width: 100%;
   position: relative;
   background-color: #000;
   padding: 100px 0;
   text-align: center;
-  
-  overflow:hidden;
+
+  overflow: hidden;
 }
 
-.intro3_wrap{
+.intro3_wrap {
   width: 100%;
 }
 
 
-.intro3_bg_color{
+.intro3_bg_color {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -915,7 +917,7 @@ input[type="checkbox"] {
 }
 
 
-.intro3_bg_color::after{
+.intro3_bg_color::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -923,13 +925,13 @@ input[type="checkbox"] {
   height: 50%;
   content: "";
   background: #5331FF;
-  background: -webkit-linear-gradient(transparent , #5331FF);
-  background: -moz-linear-gradient(transparent , #5331FF);
-  background: -o-linear-gradient(transparent , #5331FF);
-  background: linear-gradient(transparent , #5331FF);
+  background: -webkit-linear-gradient(transparent, #5331FF);
+  background: -moz-linear-gradient(transparent, #5331FF);
+  background: -o-linear-gradient(transparent, #5331FF);
+  background: linear-gradient(transparent, #5331FF);
 }
 
-.intro3_bg{
+.intro3_bg {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -938,7 +940,7 @@ input[type="checkbox"] {
   z-index: 1;
 }
 
-.intro3_bg::after{
+.intro3_bg::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -949,42 +951,42 @@ input[type="checkbox"] {
   background-size: cover;
 }
 
-.intro3_contents{
+.intro3_contents {
   width: 100%;
   margin-top: 5%;
   z-index: 2;
 }
 
-.int3_cont_up{
+.int3_cont_up {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 5%;
 }
 
-.int3_cont_down{
+.int3_cont_down {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
 
-.int3_box{
+.int3_box {
   background: #4B3470;
-  background: -webkit-radial-gradient(rgba(75,52,112,0.7) , rgba(17,1,60,.7));
-  background: -moz-radial-gradient(rgba(75,52,112,0.7), rgba(17,1,60,.7));
-  background: -o-radial-gradient(rgba(75,52,112,0.7) , rgba(17,1,60,.7));
-  background: radial-gradient(rgba(75,52,112,0.7) , rgba(17,1,60,.7));
+  background: -webkit-radial-gradient(rgba(75, 52, 112, 0.7), rgba(17, 1, 60, .7));
+  background: -moz-radial-gradient(rgba(75, 52, 112, 0.7), rgba(17, 1, 60, .7));
+  background: -o-radial-gradient(rgba(75, 52, 112, 0.7), rgba(17, 1, 60, .7));
+  background: radial-gradient(rgba(75, 52, 112, 0.7), rgba(17, 1, 60, .7));
   box-shadow: 0 0 20px #000;
   padding: 2%;
   width: 45%;
   z-index: 5;
 }
 
-.int3_box p{
+.int3_box p {
   color: #fff;
 }
 
-.int3_box h5{
+.int3_box h5 {
   background: linear-gradient(to right, #7BCEFF, #A372FF);
   background: -webkit-linear-gradient(to right, #7BCEFF, #A372FF);
   background: -moz-linear-gradient(to right, #7BCEFF, #A372FF);
@@ -994,12 +996,12 @@ input[type="checkbox"] {
   font-weight: bold;
 }
 
-.int3_box_icon{
+.int3_box_icon {
   width: 100%;
   margin-bottom: 4%;
 }
 
-.int3_box_icon img{
+.int3_box_icon img {
   max-width: 30%;
 }
 
@@ -1012,6 +1014,19 @@ input[type="checkbox"] {
   padding: 90px 0;
   background-color: #000;
   background-size: cover;
+  position: relative;
+  overflow:hidden;
+}
+
+#coin::before{
+  content: '';
+  background: url(../img/coin_a.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 10%;
 }
 
 #coin .coin_area h3 {
@@ -1022,7 +1037,6 @@ input[type="checkbox"] {
   width: 80%;
   color: #fff;
   text-align: center;
-
   padding: 20px;
   display: flex;
   justify-content: space-evenly;
@@ -1031,16 +1045,6 @@ input[type="checkbox"] {
   margin-bottom: 5%;
 }
 
-#coin .coin_area::after {
-      content: '';
-      background: url(../img/coin_a.png) no-repeat;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      margin-top: 10%;
-}
 
 #coin .coin_area .chart_area {
   width: 80%;
@@ -1051,31 +1055,31 @@ input[type="checkbox"] {
   display: flex;
   justify-content: space-around;
 }
-#coin .coin_area .chart_graph{
-  position: relative;
+
+#coin .coin_area .chart_graph {
   width: 100%;
   height: 100%;
   padding: 5%;
 }
 
-#coin .coin_area .chart_graph img{
+#coin .coin_area .chart_graph img {
   width: 100%;
-  position: relative;
   z-index: 10;
 }
 
 #coin .coin_area .chart_data {
   color: #fff;
-  position: relative;
   width: 100%;
   height: 100%;
   margin-left: 5%;
 }
+
 #coin .coin_area .chart_data ul li {
   line-height: 4;
   display: flex;
   align-items: center;
 }
+
 #coin .coin_area .chart_data ul li span {
   content: "";
   width: 30px;
@@ -1084,41 +1088,46 @@ input[type="checkbox"] {
   display: block;
   margin-right: 20px;
 }
+
 #coin .coin_area .chart_data ul li:nth-child(2) span {
   background-color: #1D3D59;
 }
+
 #coin .coin_area .chart_data ul li:nth-child(3) span {
   background-color: #3587F2;
 }
+
 #coin .coin_area .chart_data ul li:nth-child(4) span {
   background-color: #4BAABF;
 }
+
 #coin .coin_area .chart_data ul li:nth-child(5) span {
   background-color: #6BE5F2;
 }
+
 #coin .coin_area .chart_data ul li:nth-child(6) span {
   background-color: #C0E2E2;
 }
 
 /* roadmap */
 #roadmap {
-    width: 100%;
-    height: 100%;
-    background: #000;
-    padding: 5% 0%;
-    background-size: cover;
-    position: relative;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  padding: 5% 0%;
+  background-size: cover;
+  position: relative;
 }
 
 /* 배경 이미지 */
 #roadmap .roadmap_wrap::before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background: url(../img/roadmap1.png) no-repeat;
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: url(../img/roadmap1.png) no-repeat;
 }
 
 /* 타이틀 텍스트 */
@@ -1129,36 +1138,37 @@ input[type="checkbox"] {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  position: relative;  
+  position: relative;
 }
 
 #roadmap .roadmap_wrap .roadmap_title h3::after {
-    content: '';
-    width: 180px;
-    height: 5px;
-    background: linear-gradient(to right, #72FFFF, #A06DFF);
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
+  content: '';
+  width: 180px;
+  height: 5px;
+  background: linear-gradient(to right, #72FFFF, #A06DFF);
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* 영역 */
 #roadmap .roadmap_wrap {
-    width: 100%;
-    display: flex;
+  width: 100%;
+  display: flex;
 }
 
 #roadmap .roadmap_wrap .roadmap_title {
-    width: 50%;
+  width: 50%;
 }
 
 #roadmap .roadmap_wrap .roadmap_right .rdm_box {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
 }
-#roadmap .roadmap_wrap .roadmap_right .rdm_box .box_f{
+
+#roadmap .roadmap_wrap .roadmap_right .rdm_box .box_f {
   width: 370px;
   height: 370px;
   background: rgba(2, 2, 2, 0.3);
@@ -1169,7 +1179,7 @@ input[type="checkbox"] {
   text-align: center;
 }
 
-#roadmap .roadmap_wrap .roadmap_right .rdm_box .box_f:nth-child(2){
+#roadmap .roadmap_wrap .roadmap_right .rdm_box .box_f:nth-child(2) {
   background: url(../img/rdm.jpg) no-repeat center;
   background-size: cover;
   position: relative;
@@ -1194,6 +1204,7 @@ input[type="checkbox"] {
   display: block;
   text-align: left;
 }
+
 #roadmap .roadmap_wrap .roadmap_right .rdm_box .box_f p {
   color: #fff;
   padding: 0 0 0 10%;
@@ -1229,14 +1240,13 @@ input[type="checkbox"] {
   top: 0;
   left: 0;
   background-color: rgba(53, 85, 135, 0.49);
-
 }
 
 #contact .contact_area .con_box {
   position: relative;
   display: flex;
   width: 100%;
-  height:100%;
+  height: 100%;
 
 }
 
@@ -1249,22 +1259,22 @@ input[type="checkbox"] {
   height: 60%;
 }
 
-#contact .contact_area .con_box .con_left h2 img{
+#contact .contact_area .con_box .con_left h2 img {
   max-width: 100px;
 }
 
-#contact .contact_area .con_box .con_left b{
-  
+#contact .contact_area .con_box .con_left b {
+
   font-size: 5rem;
   color: #fff;
   position: relative;
 }
 
-#contact .contact_area .con_box .con_left b::after{
+#contact .contact_area .con_box .con_left b::after {
   content: "";
   background-color: #fff;
   width: 136px;
-  height:4px;
+  height: 4px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1279,22 +1289,22 @@ input[type="checkbox"] {
   justify-content: space-between;
   color: #fff;
   margin: 0 auto;
-  background-color:rgba(53, 85, 135, 0.54);
+  background-color: rgba(53, 85, 135, 0.54);
   padding: 2%;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
 
-#contact .contact_area .con_box .con_right h4{
+#contact .contact_area .con_box .con_right h4 {
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
 }
 
 #contact .contact_area .con_box .con_right p {
- margin-left: 30px;
+  margin-left: 30px;
 }
 
-#contact .contact_area .con_box .con_right form{
+#contact .contact_area .con_box .con_right form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1306,16 +1316,16 @@ input[type="checkbox"] {
 #contact .con_box .con_right form input.email::placeholder,
 #contact .con_box .con_right form textarea#message::placeholder {
   color: #fff;
-  border:none;
+  border: none;
 
 
 }
 
 #contact .con_box .con_right form input.email,
-#contact .con_box .con_right form textarea{
+#contact .con_box .con_right form textarea {
   width: 90%;
   background-color: rgba(53, 85, 135, 0.93);
-  padding: 3% ;
+  padding: 3%;
   border-radius: 30px;
   border: none;
 }
@@ -1331,111 +1341,111 @@ input[type="checkbox"] {
   border-radius: 5px;
   color: #fff;
   font-weight: 500;
-  border:none;
-  width:20%;
+  border: none;
+  width: 20%;
   margin: 0 auto;
   background-color: rgba(53, 85, 135, 0.93);
   transition: all .3s;
 }
 
-#contact .con_box .con_right form input.send:hover{
-  background-color:#fff;
+#contact .con_box .con_right form input.send:hover {
+  background-color: #fff;
   color: rgba(53, 85, 135, 0.93);
 }
 
 
 /* 푸터  */
 
-footer{
+footer {
   background-color: #222222;
-  color:#fff;
+  color: #fff;
   padding: 3% 0;
 }
 
-footer .footer_area .footer_top{
+footer .footer_area .footer_top {
   width: 100%;
   display: flex;
   justify-content: space-between;
-    align-items: flex-start;
+  align-items: flex-start;
 }
 
-footer .footer_area .footer_top h4{
+footer .footer_area .footer_top h4 {
   font-size: 1.5rem !important;
   font-weight: 400;
   margin-bottom: 30px;
 }
 
-footer .footer_area .footer_top .con_info{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30%;
+footer .footer_area .footer_top .con_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
 }
 
-footer .footer_area .footer_top .con_info dl{
+footer .footer_area .footer_top .con_info dl {
   line-height: 2;
 }
 
-footer .footer_area .footer_top .con_info dl dd{
+footer .footer_area .footer_top .con_info dl dd {
   color: #767676;
 }
 
-footer button{
-  background-color:#222222;
+footer button {
+  background-color: #222222;
   border: 1px solid #fff;
   border-radius: 5px;
   transition: all .3s;
 }
 
-footer button:hover{
+footer button:hover {
   background-color: #fff;
 }
 
-footer button:hover a{
+footer button:hover a {
   color: #222222;
   text-decoration: none;
 }
 
-footer button a{
-  color:#fff;
+footer button a {
+  color: #fff;
   font-size: 1.2rem;
 }
 
-footer button a i{
+footer button a i {
   font-size: 2rem;
 }
 
-footer .white_pp{
-  width:50%;
+footer .white_pp {
+  width: 50%;
 
 }
 
-footer .white_btn button{
- width:20%;
+footer .white_btn button {
+  width: 20%;
 }
 
-footer .white_btn:first-child button{
+footer .white_btn:first-child button {
   margin-right: 20px;
 }
 
-footer .white_btn button a{
-  padding:2%;
+footer .white_btn button a {
+  padding: 2%;
   display: block;
 }
 
-footer .white_btn button a img{
+footer .white_btn button a img {
   max-width: 30px;
 }
 
-footer .sns{
-  width:30%;
+footer .sns {
+  width: 30%;
   display: flex;
 }
 
-footer .sns_btn button a i{
+footer .sns_btn button a i {
   padding: 5px;
 }
 
-footer .footer_bottom{
+footer .footer_bottom {
   text-align: center;
 }
