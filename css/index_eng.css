@@ -18,6 +18,10 @@ address {
     margin: 0 auto;
 }
 
+#roadmap .roadmap_wrap .roadmap_right .rdm_box .box_f {
+    height: 450px;
+}
+
 @media screen and (max-width:1024px) {
     .intro1_txt br {
         display: none;
@@ -69,6 +73,13 @@ address {
 @media screen and (max-width: 576px) {
     #home .main_area h2 {
         font-size: 3.2rem;
+    }
+    #coin .coin_area .chart_data ul li {
+        font-size: 12px;
+    }
+
+    #coin .coin_area .chart_data ul li br{
+        display:none;
     }
 }
 

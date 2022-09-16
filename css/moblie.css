@@ -34,6 +34,11 @@
       justify-content: center;
   }
 
+  #coin .coin_area .chart_area {
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
   footer .white_btn button {
     width: 36%;
 }
@@ -60,6 +65,30 @@
     #contact .contact_area .con_box .con_left b {
       font-size: 4rem;
       color: #fff;}
+
+      #roadmap {
+        padding: 20% 0%;
+      }
+
+      #roadmap .roadmap_wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #roadmap .roadmap_wrap .roadmap_right .rdm_box {
+      justify-content: center;
+  }
+
+  #roadmap .roadmap_wrap .roadmap_right {
+    margin-top: 40px;
+  
+  }
+
+  #roadmap .roadmap_wrap .roadmap_right .rdm_box .box_f {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  
 
 }
 
@@ -88,6 +117,10 @@
 
   .down_area button {
     width: 47%;
+}
+
+#coin .coin_area .chart_txt {
+  flex-direction: column;
 }
 
 #contact .contact_area .con_box {
@@ -169,6 +202,11 @@ footer .footer_area .footer_top div{
 
 .down_area button a {
   font-size: 1rem;
+}
+
+#roadmap .roadmap_wrap .roadmap_right .rdm_box {
+  width: 90%;
+  margin: 0 auto;
 }
 
 footer {
